@@ -25,10 +25,9 @@ namespace Robot.Common
         public static List<T> FilterByAccessibleRange<T>(
             Position targetPosition, 
             IList<T> items, 
-            Func<T, Position> resolveItemPosition, 
-            int maxRange
+            Func<T, Position> resolveItemPosition
         ) {
-            return items.Where(item => DistanceBetweenPoints(targetPosition, resolveItemPosition(item)) <= maxRange).ToList();
+            return items.Where(item => DistanceBetweenPoints(targetPosition, resolveItemPosition(item)) <= Constants.MaxNearbyRadius).ToList();
         }
 
         public static Position ResolveMovePosition(Position from, Position to, int stepsCount, Map map, IList<Robot> robots)

@@ -40,6 +40,8 @@
 
         public const int MaxMovementDisplacement = 2;
 
+        public const int MaxNearbyRadius = 10;
+
         public const string OwnerName = "Andrii Shpek";
 
     }

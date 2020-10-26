@@ -13,8 +13,7 @@ namespace Robot.Common
             return DistanceUtils.FilterByAccessibleRange(
                 data.MyPosition,
                 data.Map.Stations,
-                new Func<EnergyStation, Position>(station => station.Position),
-                data.MyEnergy
+                new Func<EnergyStation, Position>(station => station.Position)
             );
         }
 
