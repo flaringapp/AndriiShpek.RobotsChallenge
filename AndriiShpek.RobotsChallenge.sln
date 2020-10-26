@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriiShpek.RobotsChallenge", "AndriiShpek.RobotsChallenge\AndriiShpek.RobotsChallenge.csproj", "{308032ED-3166-4A8D-8D40-8BAA8C8AE35C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{31E48C04-D2A7-4627-B4CB-F6F78208C1B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{308032ED-3166-4A8D-8D40-8BAA8C8AE35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308032ED-3166-4A8D-8D40-8BAA8C8AE35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308032ED-3166-4A8D-8D40-8BAA8C8AE35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308032ED-3166-4A8D-8D40-8BAA8C8AE35C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{308032ED-3166-4A8D-8D40-8BAA8C8AE35C} = {31E48C04-D2A7-4627-B4CB-F6F78208C1B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84D5B0A-5F89-4476-B979-1490F729F91D}
+	EndGlobalSection
+EndGlobal
