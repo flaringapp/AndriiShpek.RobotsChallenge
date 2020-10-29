@@ -6,16 +6,10 @@ namespace Robot.Common
 {
     class PositionHelper
     {
-        public static Position FindNearestStationPositon(Position currentPosition, Position stationPosition, IList<Robot> robots, IList<EnergyStation> stations)
+        public static Position FindNearestStationPositon(Position currentPosition, Position stationPosition, IList<Robot> robots)
         {
             IList<Position> robotPositions = robots.Select(robot => robot.Position).ToList();
-            IList<Position> stationPositions = stations.Select(station => station.Position).ToList();
-
-            List<Position> blockedPositions = new List<Position>();
-            blockedPositions.AddRange(robotPositions);
-            blockedPositions.AddRange(stationPositions);
-
-            return FindNearestStationPositon(currentPosition, stationPosition, blockedPositions);
+            return FindNearestStationPositon(currentPosition, stationPosition, robotPositions);
         }
 
         public static Position FindNearestStationPositon(Position currentPosition, Position stationPosition, IList<Position> blockedPositions)

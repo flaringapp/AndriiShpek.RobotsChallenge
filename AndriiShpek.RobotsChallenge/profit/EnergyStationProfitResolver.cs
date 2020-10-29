@@ -37,8 +37,7 @@ namespace Robot.Common
             Position positionToCollectEnergy = PositionHelper.FindNearestStationPositon(
                     data.MyPosition,
                     station.Position,
-                    data.Robots.FilterForeignRobots(),
-                    data.Map.Stations
+                    data.Robots.FilterForeignRobots()
             );
             Position movePosition;
 
